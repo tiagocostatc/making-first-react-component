@@ -6,7 +6,7 @@ export default class Button extends React.Component {
         return (
             <div>
                 <button onClick={() => {alert("ola pessoal")}}>
-                    OLA PESSOAL
+                    OLA PESSOAL Super fixe
                 </button>
             </div>
         )

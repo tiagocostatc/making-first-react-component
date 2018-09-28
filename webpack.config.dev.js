@@ -33,8 +33,6 @@ module.exports = {
   plugins: debug ? [
       new ExtractTextPlugin('public/styles.css')
   ] : [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
     new ExtractTextPlugin('public/styles.css'),
     new OptimizeCssAssetsPlugin({
